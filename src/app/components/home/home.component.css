@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+/* Hero */
+.hero {
+  height: 20rem;
+  /* display: flex;
+  flex-direction: column; */
+  background-image: url('../../../assets/img/bg-pattern.png'), -webkit-gradient(linear, right top, left top, from(#9aa4d8), to(#3f51b5));
+  ;
+  padding: 1rem;
+  background-color: #3f51b5;
+  margin-bottom: 5px;
+}
+
+h1,
+p {
+  text-align: center;
+  color: white;
+}
+
+h1 {
+  display: block;
+  padding: 1rem 0;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+p i {
+  font-size: 3rem;
+  margin-right: .8rem;
+  color: #ff4081;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+button {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  margin-top: 3rem;
+  padding: .5rem 3rem;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  p i {
+    margin-right: 1.2rem;
+  }
+
+  button {
+    padding: .5rem 2rem;
+    margin-top: -.2rem;
+  }
+}
+
+/* Grid */
+.grid {
+  margin-top: 5px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+}
+
+@media (max-width: 768px) {
+  .grid {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.grid .w1,
+.grid .j1 {
+  background-color: #3f51b5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.w1 h1,
+.j1 h1 {
+  font-size: 5rem;
+}
+
+.w2,
+.j2 {
+  padding: 0 1rem;
+}
+
+.w2 h1,
+.j2 h1 {
+  color: black;
+  text-align: center;
+  margin-top: .5rem;
+  font-weight: 500;
+}
+
+.j2 h1 {
+  margin-top: 1rem;
+}
+
+.tec {
+  display: flex;
+  justify-content: space-around;
+}
+
+.tec .h,
+.tec .c,
+.tec .j,
+.tec .se,
+.tec .ee {
+  border: 1px solid #3f51b5;
+  padding: 1.7rem 2.2rem;
+  border-radius: 100%;
+  font-size: 2rem;
+  transition: all .3s ease-out;
+}
+
+.tec .h:hover {
+  background-color: #e44d26;
+  color: white;
+  border: 1px solid #e44d26;
+}
+
+.tec .c:hover {
+  background-color: #1b83be;
+  color: white;
+  border: 1px solid #1b83be;
+}
+
+.tec .j:hover {
+  background-color: #f7df1e;
+  color: white;
+  border: 1px solid #f7df1e;
+}
+
+.tec .se:hover {
+  background-color: #dd4f39;
+  color: white;
+  border: 1px solid #dd4f39;
+}
+
+.tec .ee:hover {
+  background-color: #3f51b5;
+  color: white;
+  border: 1px solid #3f51b5;
+}
+
+.w2 h2,
+.j2 h2 {
+  text-align: center;
+  color: #3f51b5;
+  margin-top: 2rem;
+  font-weight: 400;
+}
+
+.w2 p,
+.j2 p {
+  color: black;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.grid div.j1 {
+  grid-column: 2 / 3;
+}
+
+.j2 {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}

@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'acxelmorales';
+
+  oculto: boolean = true;
+
+  mostrar(): void {
+    this.oculto = false;
+  }
+
+  ocultar(): void {
+    this.oculto = true;
+  }
+
 }

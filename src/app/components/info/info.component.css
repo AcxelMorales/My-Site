@@ -1,0 +1,25 @@
+mat-card {
+  width: 19rem;
+}
+
+.icono {
+  border: 1px solid gray;
+  text-align: center;
+  line-height: 2.5rem;
+}
+
+mat-list-item i {
+  color: #3f51b5;
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+@media (max-width: 768px) {
+  mat-card {
+    width: 15rem;
+  }
+
+  mat-list-item span {
+    font-size: .75rem;
+  }
+}

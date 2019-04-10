@@ -1,0 +1,27 @@
+.card {
+  width: 40%;
+  margin: 0 auto !important;
+}
+
+.user {
+  background-image: url('../../../assets/img/yo.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+mat-card-actions {
+  text-align: center;
+}
+
+i {
+  margin-right: 1rem;
+  font-size: 1.5em;
+  color: #3f51b5;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 90%;
+    margin-top: 1rem !important;
+  }
+}
