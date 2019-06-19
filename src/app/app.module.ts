@@ -1,15 +1,18 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { MaterialModule } from './material.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavComponent } from './components/nav/nav.component';
 import { AboutComponent } from './components/about/about.component';
 import { HomeComponent } from './components/home/home.component';
-import { APP_ROUTING } from './app.routing';
-import { RouterModule } from '@angular/router';
 import { InfoComponent } from './components/info/info.component';
+import { ChartComponent } from './components/chart/chart.component';
+
+import { APP_ROUTING } from './app.routing';
+
+import { ChartsModule } from 'ng2-charts';
 
 @NgModule({
   entryComponents: [
@@ -20,13 +23,15 @@ import { InfoComponent } from './components/info/info.component';
     NavComponent,
     AboutComponent,
     HomeComponent,
-    InfoComponent
+    InfoComponent,
+    ChartComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MaterialModule,
-    APP_ROUTING
+    APP_ROUTING,
+    ChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
